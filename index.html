@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Салон краси L'etual</title>
+	<link rel="stylesheet" href="style2.css">
+	<link href="https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="address">
+        <img src="images/location.svg" alt="location" class="icon">
+        <span>м. Львів, вул. І. Франка 50</span>
+      </div>
+      <div class="phone">
+        <img src="images/phone_white.svg" alt="phone" class="icon">
+        <span>(098) 441 04 34</span>
+      </div>
+      <div class="lang">UA</div>
+    </div>
+    <div class="nav-bar">
+      <img src="images/logotype.png" alt="Logo" class="logo">
+      <div class="burger" id="burger">&#9776;</div>
+      <nav id="nav-menu">
+        <a href="#main">Головна</a>
+        <a href="#about_us">Про нас</a>
+        <a href="#our_services">Послуги</a>
+        <a href="#our_prices">Ціни</a>
+        <a href="#our_realization">Виконання</a>
+        <a href="#our_contacts">Контакти</a>
+      </nav>
+    </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const burger = document.getElementById("burger");
+      const navMenu = document.getElementById("nav-menu");
+      const menuLinks = document.querySelectorAll("#nav-menu a");
+
+      burger.addEventListener("click", function() {
+        navMenu.classList.toggle("show");
+      });
+      menuLinks.forEach(link => {
+        link.addEventListener("click", () => {
+          navMenu.classList.remove("show");
+        });
+      });
+    });
+    </script>
+    <div id="main" class="main_page">
+    	<div class="black_back">
+    		<h1> Cалон краси L'etual</h1>
+    		<p class="we_create">Ми створюємо образи, які закохують у себе</p>
+    	</div>
+    </div>
+  </header>
+  <main>
+
+
+  <section id="about_us" class="about">
+    <h2>Про нас</h2>
+    <div class="about-us-flex">
+      <div class="about-us-pic">
+        <img src="images/about.png" alt="" class="img_about">
+      </div>
+      <div class="about-us-txt">
+        <div class="about-us-p">
+          <p>Салон краси "Л’Етуаль" відзначається високою професійністю
+          майстрів та використанням у роботі креативних ідей, поєднаних з сучасними досягненнями індустрії краси. 
+          Важливим аспектом діяльності є також створення комфортної та розслаблюючої атмосфери, 
+          що робить кожен візит до салону приємним і розслаблюючим досвідом.
+          </p>
+          <p>
+          Салон пропонує повний комплекс процедур по догляду за собою та працює виключно з професійною косметикою!
+          Також ми надаємо послуги персоналізованих консультацій, де клієнти можуть отримати професійні рекомендації 
+          з догляду за шкірою та волоссям.
+          </p>
+        </div>
+        <div class="btn-more">Детальніше</div>
+      </div>   
+    </div>
+  </section>
+
+
+
+<section id="our_services" class="serv">
+  <video autoplay muted loop class="bg-video">
+    <source src="bgg.mp4" type="video/mp4">
+  </video>
+
+  <div class="line-one">
+    <div class="foto-wrapper">
+      <div class="foto">
+        <img src="images/haircut_serv.png" alt="">
+        <div class="foto-text">ПЕРУКАРСЬКІ ПОСЛУГИ</div>
+      </div>
+      <div class="foto">
+        <img src="images/manicure.png" alt="">
+        <div class="foto-text">МАНІКЮР</div>
+      </div>
+    </div>
+    <div class="hdr">
+      <h2>Послуги</h2>
+      <p>Тут перетворюються мрії про красу на реальність</p>
+    </div>
+  </div>
+  <div class="line-one line-two">
+    <div class="hdr">
+      <p>Дзеркало покаже, а ти — відчуєш</p>
+    </div>
+    <div class="foto-wrapper">
+      <div class="foto">
+        <img src="images/visage.png" alt="">
+        <div class="foto-text">ВІЗАЖ</div>
+      </div>
+
+      <div class="foto">
+        <img src="images/cosmetics.png" alt="">
+        <div class="foto-text">КОСМЕТОЛОГІЯ</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="our_prices" class="prices">
+  <h2 >Ціни</h2>
+  <div class="price-container">
+
+    <div class="price-card">
+      <div class="price-header">
+        <h3>Базовий</h3>
+        <p class="price">999 грн</p>
+      </div>
+      <div class="price-body">
+        <ul>
+          <li>Манікюр</li>
+          <li>Корекція брів</li>
+          <li>Денний макіяж</li>
+        </ul>
+      </div>
+
+      <div class="price-footer">
+        <a href="#our_contacts">Записатись</a>
+      </div>
+    </div>
+
+    <div class="price-card">
+      <div class="price-header">
+        <h3>Стандарт</h3>
+        <p class="price">1499 грн</p>
+      </div>
+      <div class="price-body">
+        <ul>
+          <li>Манікюр</li>
+          <li>Денний макіяж</li>
+          <li>Корекція брів</li>
+          <li>Чистка обличчя</li>
+        </ul>
+      </div>
+      <div class="price-footer">
+        <a href="#our_contacts">Записатись</a>
+      </div>
+    </div>
+
+    <div class="price-card">
+      <div class="price-header">
+        <h3>Преміум</h3>
+        <p class="price">1999 грн</p>
+      </div>
+      <div class="price-body">
+        <ul>
+          <li>Манікюр</li>
+          <li>Корекція брів</li>
+          <li>Чистка обличчя</li>
+          <li>SPA-догляд</li>
+          <li>Вечірній макіяж</li>
+        </ul>
+      </div>
+      <div class="price-footer">
+        <a href="#our_contacts">Записатись</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+
+
+  <footer class="foot-img">
+    <h2>Виконання</h2>
+
+        <div id="our_realization" class="realization">
+          <img src="images/made1.jpg" alt="" class="made_1">
+          <img src="images/made2.jpg" alt="" class="made_2">
+          <img src="images/made3.jpg" alt="" class="made_3">
+          <img src="images/made4.jpg" alt="" class="made_4">
+          <img src="images/made5.jpg" alt="" class="made_5">
+          <img src="images/made6.jpg" alt="" class="made_6">  
+        </div> 
+
+
+        <div id="our_contacts" class="contacts">
+          <div class="contacts-foto">
+            <img src="images/map.jpg" alt="" class="map">
+          </div>
+          <div class="contacts-txt">
+            <h3>Контакти</h3>
+            <p>Вул І. Франка 50 м. Львів</p>
+            <p>(098) 441 04 34</p>
+            <p>Пн. - Сб. 10.00 до 20.00 <br>Нд. Вихідний</p>
+          </div>
+          <div class="contacts-btn">
+            <button class="btn-call">Онлайн запис</button>
+          </div>
+        </div> 
+
+        <div class="contact-form-wrapper">
+            <form class="contact-form">
+                <h2>Форма для запису</h2>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Ваше ім'я" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="example@gmail.com" required>
+
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date">
+
+                <label for="message">Message</label>
+                <textarea id="message" rows="4" placeholder="Ваше повідомлення"></textarea>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        
+  </footer>
+</body>
+</html>
